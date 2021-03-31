@@ -23,6 +23,8 @@ func SignatureJson(str []byte) (string, error) {
 	return formatStr, nil
 }
 
+// SortMap
+// 生成map参数的签名字符串
 func SortMap(m map[string]interface{}) string {
 	if len(m) == 0 {
 		return ""
